@@ -6,383 +6,59 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-    <title>First page</title>
+    <title>Bootstrap Breakpoints</title>
     <style>
+
         body {
-            padding:70px;
+            background-color: red;
         }
 
-        .box {
-            padding: 20px;
-            margin-bottom: 10px;
+        /*  small devices (portrait phones, less than 576px) */
+        @media (min-width: 576px) { 
+             body {
+            background-color: green;
         }
+        }
+
+        /* medium devices (landscape phones, 576px and up) */
+        @media (min-width: 768px) { 
+             body {
+            background-color: blue
+        }
+        }
+
+        /* large devices (tablets, 768px and up) */
+        @media (min-width: 992px) {
+             body {
+            background-color: red;
+        }
+         }
+
+        /* extra large devices (desktops, 992px and up) */
+        @media (min-width: 1200px) {
+             body {
+            background-color: green;
+        }
+         }
+
+        /* extra extra large devices (large desktops, 1200px and up) */
+        @media (min-width: 1400px) {
+             body {
+            background-color: blue;
+        }
+         }
+
+
+
+
 
     </style>
+   
 </head>
 <body>
    
-  <div class="bg-success mb-2 p-4 w-25">Merhaba</div>
-  <div class="bg-success mb-2 p-4 w-50">Merhaba</div>
-  <div class="bg-success mb-2 p-4 w-75">Merhaba</div>
-  <div class="bg-success mb-2 p-4 w-100">Merhaba</div>
-
-
-  <div style="height:400px" class="bg-warning">
-
-         <div class="bg-primary d-inline-block p-4 h-25">Merhaba</div>
-         <div class="bg-primary d-inline-block p-4 h-50">Merhaba</div>
-         <div class="bg-primary d-inline-block p-4 h-75">Merhaba</div>
-         <div class="bg-primary d-inline-block p-4 h-100">Merhaba</div>
-
-  </div>
-
-  <br><br>
-
-  <table class="table">
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>City</th>
-        </tr>
-    </thead>
-    <tbody>
-
-        <tr>
-            <td>1</td>
-            <td>John Doe</td>
-            <td>john@example.com</td>
-            <td>New York</td>
-        </tr>
-
-         <tr>
-            <td>2</td>
-            <td>ali can</td>
-            <td>john@example.com</td>
-            <td>New York</td>
-        </tr>
-
-         <tr>
-            <td>3</td>
-            <td>memet Kaya Doe</td>
-            <td>john@example.com</td>
-            <td>New York</td>
-        </tr>
-
-         <tr>
-            <td>4</td>
-            <td>sinem sine Doe</td>
-            <td>john@example.com</td>
-            <td>New York</td>
-        </tr>
-
-
-    </tbody>
-
-
-  </table>
-  
-<br><br>
-
  
-
- <div class="table-responsive">
-
-     <table class="table table-sm">
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>City</th>
-            <th>City</th>
-            <th>City</th>
-            <th>City</th>
-            <th>City</th>
-            <th>City</th>
-            <th>City</th>
-            <th>City</th>
-            <th>City</th>
-            <th>City</th>
-            <th>City</th>
-            <th>City</th>
-            <th>City</th>
-            <th>City</th>
-        </tr>
-    </thead>
-    <tbody>
-
-        <tr>
-            <td>1</td>
-            <td>John Doe</td>
-            <td>john@example.com</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-        </tr> <tr>
-            <td>1</td>
-            <td>John Doe</td>
-            <td>john@example.com</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-        </tr> <tr>
-            <td>1</td>
-            <td>John Doe</td>
-            <td>john@example.com</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-        </tr> <tr>
-            <td>1</td>
-            <td>John Doe</td>
-            <td>john@example.com</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-        </tr> <tr>
-            <td>1</td>
-            <td>John Doe</td>
-            <td>john@example.com</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-        </tr> <tr>
-            <td>1</td>
-            <td>John Doe</td>
-            <td>john@example.com</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-        </tr> <tr>
-            <td>1</td>
-            <td>John Doe</td>
-            <td>john@example.com</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-        </tr> <tr>
-            <td>1</td>
-            <td>John Doe</td>
-            <td>john@example.com</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-        </tr> <tr>
-            <td>1</td>
-            <td>John Doe</td>
-            <td>john@example.com</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-        </tr> <tr>
-            <td>1</td>
-            <td>John Doe</td>
-            <td>john@example.com</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-        </tr> <tr>
-            <td>1</td>
-            <td>John Doe</td>
-            <td>john@example.com</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-        </tr>
-
-         <tr>
-            <td>2</td>
-            <td>John Doe</td>
-            <td>john@example.com</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-        </tr>
-
-         <tr>
-            <td>3</td>
-            <td>John Doe</td>
-            <td>john@example.com</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-        </tr>
-
-         <tr>
-            <td>4</td>
-            <td>John Doe</td>
-            <td>john@example.com</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-            <td>New York</td>
-        </tr>
-
-
-    </tbody>
-
-
-  </table>
-    
-
- </div>
-
-
+ 
 
 
 
