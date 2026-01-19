@@ -10,61 +10,73 @@
     <style>
 
         body {
-            background-color: red;
+            padding: 70px;
         }
-
-        /*  small devices (portrait phones, less than 576px) */
-        @media (min-width: 576px) { 
-             body {
-            background-color: green;
-        }
-        }
-
-        /* medium devices (landscape phones, 576px and up) */
-        @media (min-width: 768px) { 
-             body {
-            background-color: blue
-        }
-        }
-
-        /* large devices (tablets, 768px and up) */
-        @media (min-width: 992px) {
-             body {
-            background-color: red;
-        }
-         }
-
-        /* extra large devices (desktops, 992px and up) */
-        @media (min-width: 1200px) {
-             body {
-            background-color: green;
-        }
-         }
-
-        /* extra extra large devices (large desktops, 1200px and up) */
-        @media (min-width: 1400px) {
-             body {
-            background-color: blue;
-        }
-         }
-
-
-
-
 
     </style>
    
 </head>
 <body>
    
+ <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" name="email" id="email" class="form-control" placeholder="enter email">
+ </div>
+
+ <div class="my-3">
+    <label for="intro" class="form-label">Intro</label>
+    <textarea name="intro" id="intro" class="form-control"></textarea>
+ </div>
  
- 
+ <div class="my-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" name="name" id="name" class="form-control form-control-sm" placeholder="enter name ">
+ </div>
 
+  <div class="my-3">
+    <label for="name" class="form-label">SurName</label>
+    <input type="text" name="name" id="name" class="form-control form-control-lg" placeholder="enter name ">
+ </div>
 
+ <div class="my-3">
+    <label for="name" class="form-label">Username</label>
+    <input type="text" name="name" class="form-control-plaintext" readonly value="sadikturan">
+ </div>
 
+<div class="my-3">
+    <label for="cities" class="form-label">Cities</label>
+    <input type="text" list="citylist" class="form-control" placeholder="type...">
 
+    <datalist id="citylist">
 
+        <option value="Kocaeli"></option>
+        <option value="İstanbul"></option>
+        <option value="İzmir"></option>
+        <option value="Rize"></option>
+        <option value="Ankara"></option>
 
+    </datalist>
+ </div>
+
+<div class="my-3">
+    <label for="cities" class="form-label">Cities</label>
+    <select name="" id="" class="form-select">
+
+         <option value="41">Kocaeli</option>
+        <option value="34">İstanbul</option>
+        <option value="35">İzmir</option>
+        <option value="53">Rize</option>
+        <option value="06">Ankara</option>
+    </select>
+ </div>
+
+ <div class="form-file">
+    <input type="file" name="" id="" class="form-file-input" id="customFile">
+    <label for="customFile" class="form-file-label">
+        <span class="form-file-text">Dosya Seç</span>
+        <span class="form-file-button">Dosya Ara</span>
+    </label>
+ </div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
